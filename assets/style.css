@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background: #fff;
+  --color1: #140152;
+  --color2: #ff4a52;
+  --color3: #f9c80e;
+  --color4: #727d71;
+  --color5: #f1f1f0;
+  --color6: #001d38;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+
+  list-style: none;
+}
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  color: var(--color1);
+  font-weight: 400;
+}
+.logo {
+  height: 70px;
+  margin-left: 15px;
+}
+
+.logousuario {
+  height: 40px;
+  border: solid var(--color1) 2px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  color: var(--color1);
+  font-weight: 500;
+  font-size: 16px;
+}
+nav {
+  display: flex;
+  gap: 25px;
+  margin-right: 10px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+/* -----------------------  Carro de compras (Header) ------------------------- */
+.card-icon {
+  height: 40px;
+  border: solid var(--color1) 2px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.divcarro {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 50px 30px;
+  background: black;
+  border-left: 1px solid red;
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 65px);
+  z-index: 2;
+  overflow-y: scroll;
+  display: none;
+}
+.divcarro::-webkit-scrollbar {
+  display: none;
+}
+
+.divcarro h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.divcarro-item {
+  display: flexa;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 20px;
+}
+.divcarro-item img {
+  height: 65px;
+  width: 65px;
+}
+
+.item-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item-bid {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.item-price {
+  color: blue;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quantity-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.up {
+  border: solid 1px #fff;
+}
+.down {
+  background-color: gray;
+  border: 1px red solid;
+}
+.divider {
+  margin-top: 20px;
+  border: 0.5px solid #fff;
+}
+.card-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-total p {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card-total span {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#cart-toggle {
+  display: none;
+}
+
+#cart-toggle:checked + .divcarro {
+  display: flex;
+}
+
+/*  --------------------------------------     HERO    ----------------------------------- */
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainhero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainhero__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/mar33.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainhero__divtexto {
+  font-size: 2rem;
+  padding: 30px 0;
+  text-align: center;
+  width: 65%;
+  color: #fff;
+  background-color: hsl(120, 3%, 81%, 0.5);
+}
+
+.herodivdown h2 {
+  color: rgb(247, 244, 244);
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 60%;
+}
+
+/* ----------------------------    Beneficios    --------------------------- */
+
+.beneficios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color6);
+}
+
+.beneficioscontenedor {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  flex-wrap: wrap;
+}
+
+.divcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 250px;
+  height: 240px;
+  border-radius: 8px;
+  border: solid 3px #808080;
+  color: #fff;
+  text-align: center;
+}
+
+.divcard-up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgexcursion,
+.imgdescuento {
+  height: 90px;
+  width: 90px;
+}
+.imgpack {
+  height: 80px;
+  width: 80px;
+}
+.divcard span {
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--color5);
+}
+.divcard p {
+  font-weight: 400;
+  font-size: 17px;
+  color: #808080;
+}
+
+/* -------------------------------------    Destinos    -------------------------------------- */
+
+.maindestinos {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.card-destino {
+  height: 310px;
+  width: 370px;
+  border-radius: 10px;
+  background-color: hsl(120, 3%, 81%, 0.5);
+}
+
+.card-destino-down h3 {
+  font-weight: 600;
+  font-size: 28px;
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.down-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.down-items-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.down-items-1 p {
+  font-weight: 600;
+  font-size: 20px;
+  color: tomato;
+}
+
+.down-items-1 span {
+  font-weight: 600;
+  font-size: 18px;
+  color: orange;
+}
+
+.down-items button {
+  padding: 8px 17px;
+  border-radius: 25px;
+  border: none;
+  background: tomato;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.d1img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/peru.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d2img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/italia.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d3img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/brasil.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d4img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/venecia.avif);
+  background-position: bottom;
+  background-size: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d5img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/venezuela.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d6img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/patagonia.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d7img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/cataratas.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d8img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/san-ignacio.jpg);
+  background-size: cover;
+  background-position: right;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.d9img {
+  height: 190px;
+  width: 370px;
+  background-image: url(./img/egipto.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

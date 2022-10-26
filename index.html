@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <title>Agencia de viajes</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/img/logo.png"
+        href="index.html"
+        class="logo"
+        alt="logobrujula"
+      />
+      <nav>
+        <!-- -----------------------    MENU HAMBURGUESA    ---------------------------- -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu-.png" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Beneficios</a></li>
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <!-- ------------------------    CARRO DE COMPRAS    --------------------------- -->
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./assets/img/carrito.png"
+            alt="logocompras"
+            class="card-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="divcarro">
+          <h2>Tus compras</h2>
+          <div class="cart-item">
+            <img src="#" alt="descripcion" />
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current</p>
+              <span class="item-price">4.8 ETH</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="quantity-handler">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <span class="divide"></span>
+          <div class="card-total">
+            <p>Total</p>
+            <span>4.8</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
+        <!-- -------------------------  Fin carro de compras ------------------------ -->
+        <a href="./index.html" class="logousuarios"
+          ><img
+            src="./assets/img/logousuarios.png"
+            class="logousuario"
+            alt="logodeusuarios"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <section class="mainhero">
+        <div class="mainhero__img">
+          <div class="mainhero__divtexto">
+            <h1>¡Elegí tu próximo destino!</h1>
+          </div>
+        </div>
+      </section>
+      <section class="beneficios">
+        <div class="beneficioscontenedor">
+          <div class="divcard">
+            <div class="divcard-up">
+              <img src="./assets/img/pack.png" class="imgpack" />
+              <span>Packs</span>
+            </div>
+            <p>
+              Elegi el pack que mas te guste: hospedaje y viaje, hospedaje o
+              viaje.
+            </p>
+          </div>
+          <div class="divcard">
+            <div class="divcard-up">
+              <img src="./assets/img/excursion.png" class="imgexcursion" />
+              <span>Excursiones</span>
+            </div>
+            <p>
+              Para poder conocer el lugar de manera mas organizada y segura.
+            </p>
+          </div>
+          <div class="divcard">
+            <div class="divcard-up">
+              <img src="./assets/img/descuentos.png" class="imgdescuento" />
+              <span>Descuentos</span>
+            </div>
+            <p>Contamos con descuentos para jubilados y estudiantes.</p>
+          </div>
+        </div>
+      </section>
+      <section class="maindestinos">
+        <h2>¡Nosotros nos encargamos del resto!</h2>
+        <p>
+          Para que hagas de tus vacaciones lo único que deben ser:
+          ¡espectaculares!
+        </p>
+        <div class="card-destino d1">
+          <div class="d1img"></div>
+          <div class="card-destino-down">
+            <h3>Peru</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d2">
+          <div class="d2img"></div>
+          <div class="card-destino-down">
+            <h3>Italia</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d3">
+          <div class="d3img"></div>
+          <div class="card-destino-down">
+            <h3>Brasil</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d4">
+          <div class="d4img"></div>
+          <div class="card-destino-down">
+            <h3>Venecia</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d5">
+          <div class="d5img"></div>
+          <div class="card-destino-down">
+            <h3>Venezuela</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d6">
+          <div class="d6img"></div>
+          <div class="card-destino-down">
+            <h3>Perito Moreno</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d7">
+          <div class="d7img"></div>
+          <div class="card-destino-down">
+            <h3>Cataratas del Iguazu</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d8">
+          <div class="d8img"></div>
+          <div class="card-destino-down">
+            <h3>Ruinas San Ignacio</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-destino d9">
+          <div class="d9img"></div>
+          <div class="card-destino-down">
+            <h3>Egipto</h3>
+            <div class="down-items">
+              <div class="down-items-1">
+                <p>Viaje y Hospedaje - 7 días</p>
+                <span> $845</span>
+              </div>
+              <button>Comprar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacto"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
