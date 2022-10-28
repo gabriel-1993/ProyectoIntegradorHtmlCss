@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 :root {
   --background: #fff;
   --color1: #140152;
@@ -213,13 +213,6 @@ main {
   background-color: hsl(120, 3%, 81%, 0.5);
 }
 
-.herodivdown h2 {
-  color: var(--background);
-  font-size: 1.5rem;
-  font-weight: 400;
-  width: 60%;
-}
-
 /* ----------------------------    Beneficios    --------------------------- */
 
 .beneficios {
@@ -315,7 +308,6 @@ main {
 .card-destino {
   height: 310px;
   width: 370px;
-  border-radius: 10px;
   background-color: var(--color5);
 }
 
@@ -348,7 +340,7 @@ main {
 }
 .down-items-1 p {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--color6);
 }
 
@@ -362,7 +354,7 @@ main {
   padding: 10px 22px;
   border-radius: 25px;
   border: none;
-  background: tomato;
+  background: #ff6347;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -458,4 +450,141 @@ main {
   background-position: center;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+/* -----------------------------------------    Contacto    ------------------------------------------- */
+
+.maincontacto {
+  background-color: var(--color5);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorcontacto {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divmapa {
+  height: 50vh;
+  width: 90%;
+}
+
+.divcontacto-down {
+  display: flex;
+  width: 90%;
+  height: 40%;
+}
+
+.divform {
+  height: 100%;
+  width: 70%;
+}
+
+textarea {
+  height: 15em;
+  width: 90%;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: solid 2px var(--color4);
+  background-color: var(--color5);
+  margin-bottom: 30px 0px;
+  letter-spacing: 3px;
+  color: var(--color1);
+}
+
+.contacto-datos {
+  padding: 18px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contacto-datos:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.contacto-datos:focus::-moz-input-placeholder {
+  opacity: 0;
+}
+.contacto-datos:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.divinputs {
+  margin-top: 30px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.divinput-50 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.input-nombre,
+.input-correo,
+.input-telefono,
+.input-asunto {
+  width: 100%;
+  border: solid 2px var(--color4);
+  background-color: var(--color5);
+  letter-spacing: 3px;
+}
+
+.submit-contacto {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--color3);
+  color: #fff;
+  border: none;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.submit-contacto:hover {
+  background-color: #ff6347;
+}
+.divdatos {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 30%;
+  height: 100%;
+  padding: 20px 50px;
+}
+
+.divdatos-item {
+  display: flex;
+  gap: 20px;
+}
+
+.divdatos-item2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divdatos-item2 span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.divdatos-item2 p {
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--color4);
+}
+.datoslogo {
+  height: 40px;
 }
