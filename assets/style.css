@@ -19,16 +19,17 @@
   list-style: none;
 }
 header {
-  height: 70px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 140px;
   color: var(--color1);
   font-weight: 400;
+  background-color: #fff;
 }
 .logo {
-  height: 70px;
+  height: 190px;
   margin-left: 15px;
 }
 
@@ -38,14 +39,27 @@ header {
   padding: 5px 10px;
   border-radius: 10px;
 }
+.logousuario:hover,
+.card-icon:hover {
+  height: 38px;
+  transform: translateX(-4px);
+  border: solid 3px var(--color3);
+}
 
-nav a {
+.navbar-a {
   color: var(--color1);
   font-weight: 500;
   font-size: 16px;
 }
+
+.navbar-a:hover {
+  color: var(--color2);
+  border-bottom: solid 2px var(--color3);
+}
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
   margin-right: 10px;
 }
@@ -53,6 +67,7 @@ nav {
 .navbar-list {
   display: flex;
   gap: 20px;
+  justify-content: center;
   align-items: center;
   list-style: none;
 }
@@ -338,6 +353,7 @@ main {
   flex-direction: column;
   gap: 10px;
 }
+
 .down-items-1 p {
   font-weight: 700;
   font-size: 15px;
@@ -352,13 +368,18 @@ main {
 
 .down-items button {
   padding: 10px 22px;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
-  background: #ff6347;
+  background: var(--color3);
   font-size: 18px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
+}
+
+.down-items button:hover {
+  background: #ff6347;
+  padding: 9px 20px;
 }
 
 .d1img {
@@ -499,6 +520,7 @@ textarea {
   margin-bottom: 30px 0px;
   letter-spacing: 3px;
   color: var(--color1);
+  border-radius: 10px;
 }
 
 .contacto-datos {
@@ -538,6 +560,7 @@ textarea {
   border: solid 2px var(--color4);
   background-color: var(--color5);
   letter-spacing: 3px;
+  border-radius: 8px;
 }
 
 .submit-contacto {
@@ -548,12 +571,16 @@ textarea {
   background-color: var(--color3);
   color: #fff;
   border: none;
+  border-radius: 15px;
   letter-spacing: 4px;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .submit-contacto:hover {
   background-color: #ff6347;
+  padding: 14px 28px;
+  margin-top: 32px;
 }
 .divdatos {
   display: flex;
@@ -587,4 +614,12 @@ textarea {
 }
 .datoslogo {
   height: 40px;
+}
+
+/* ------------------------------------------    Footer    -------------------------------------- */
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: var(--color6);
 }
