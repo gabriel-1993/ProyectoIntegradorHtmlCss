@@ -103,6 +103,10 @@
   }
 
   /*-------------------------------------------     DESTINO       -----------------------------------------  */
+  #maindestinos {
+    gap: 15px;
+    padding: 25px;
+  }
   .card-destino {
     height: 410px;
     width: 470px;
@@ -173,5 +177,114 @@
   }
   .logok0footer {
     display: none;
+  }
+}
+
+/*-----------------------------------------------     MEDIA 576px    ----------------------------------------------- */
+@media (max-width: 576px) {
+  /* ------------------------------------------     HERO    ------------------------------------------- */
+  .mainhero__divtexto h1 {
+    font-size: 1.3rem;
+  }
+
+  /* --------------------------------------     BENEFICIOS     --------------------------------------- */
+  #mainbeneficios h2 {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  #mainbeneficios h3 {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .beneficioscontenedor {
+    gap: 10px;
+  }
+
+  .divcard-up {
+    display: none;
+  }
+
+  .divcard p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  /* ---------------------------------------     DESTINOS    -------------------------------------------- */
+  .card-destino {
+    height: 8%;
+    width: 100%;
+  }
+
+  .card-destino-down {
+    height: 100px;
+  }
+
+  .down-items-1 {
+    gap: 3px;
+  }
+
+  .d1img,
+  .d2img,
+  .d3img,
+  .d4img,
+  .d5img,
+  .d6img,
+  .d7img,
+  .d8img,
+  .d9img {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .card-destino-down h3 {
+    font-size: 27px;
+  }
+
+  .down-items-1 p {
+    font-size: 13px;
+  }
+
+  .down-items-1 span {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .down-items button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* ---------------------------------------------------      CONTACTO     -------------------------------------------- */
+
+  .divmapa {
+    height: 70vh;
+  }
+
+  .divinputs {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .divinput-50 {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .submit-contacto {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  /* -----------------------------------------------     FOOTER     ----------------------------------------- */
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .footer-div-logos {
+    gap: 25px;
+  }
+  .logofooter {
+    font-size: 25px;
   }
 }

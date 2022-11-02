@@ -499,7 +499,7 @@ main {
 .d8img {
   height: 190px;
   width: 370px;
-  background-image: url(./img/san-ignacio.jpg);
+  background-image: url(./img/bariloche.jpg);
   background-size: cover;
   background-position: right;
   border-top-left-radius: 12px;
@@ -519,6 +519,10 @@ main {
 
 /* -----------------------------------------    Contacto    ------------------------------------------- */
 
+.divmapa {
+  height: 50vh;
+  width: 90%;
+}
 #maincontacto {
   background-color: var(--color5);
   width: 100%;
@@ -537,11 +541,6 @@ main {
   align-items: center;
 }
 
-.divmapa {
-  height: 90%;
-  width: 90%;
-}
-
 .divcontacto-down {
   display: flex;
   width: 90%;
@@ -551,6 +550,11 @@ main {
 .divform {
   height: 100%;
   width: 70%;
+}
+
+.divform h2 {
+  color: var(--color3);
+  font-weight: 500;
 }
 
 textarea {
@@ -626,7 +630,7 @@ textarea {
   flex-direction: column;
   gap: 35px;
   width: max(30%, 300px);
-  height: 100%;
+  height: 50%;
   padding: 20px 0;
 }
 
