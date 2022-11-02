@@ -6,6 +6,7 @@
 }
 
 @media (max-width: 992px) {
+  /* ------------------------     HEADER     ---------------------- */
   .navbar-list {
     position: absolute;
     top: 75px;
@@ -52,5 +53,125 @@
   /* Borde Carrito */
   .card-icon {
     height: 40px;
+  }
+
+  /*-------------------------------------------     BENEFICIOS    -----------------------------------------  */
+  #mainbeneficios h2 {
+    font-size: 1.8rem;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #mainbeneficios h3 {
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+  }
+  .beneficioscontenedor {
+    gap: 40px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .divcard {
+    flex-direction: row;
+    width: 90%;
+    height: 24%;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .imgpack,
+  .imgexcursion,
+  .imgdescuento {
+    height: 65px;
+    width: 65px;
+    order: 2;
+  }
+  .divcard-up {
+    width: 30%;
+    border-right: solid 1px var(--color4);
+  }
+  .divcard span {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color5);
+  }
+  .divcard p {
+    width: 70%;
+    font-weight: 500;
+    color: var(--color5);
+  }
+
+  /*-------------------------------------------     DESTINO       -----------------------------------------  */
+  .card-destino {
+    height: 410px;
+    width: 470px;
+  }
+
+  .d1img,
+  .d2img,
+  .d3img,
+  .d4img,
+  .d5img,
+  .d6img,
+  .d7img,
+  .d8img,
+  .d9img {
+    height: 290px;
+    width: 470px;
+  }
+
+  .card-destino-down h3 {
+    font-size: 32px;
+  }
+
+  .down-items-1 p {
+    font-size: 20px;
+  }
+
+  .down-items-1 span {
+    font-size: 23px;
+    font-weight: 800;
+  }
+  .down-items button {
+    padding: 13px 28px;
+  }
+  /* ------------------------------------------     CONTACTO      -----------------------------------------  */
+  .divmapa {
+    height: 60%;
+    width: 90%;
+  }
+  .divcontacto-down {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divform {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .divinputs {
+    width: 100%;
+  }
+
+  /* ----------------------------------------------------    FOOTER    ------------------------------------------ */
+  footer {
+    height: 130px;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    width: auto;
+    text-align: center;
+    order: 2;
+  }
+  .logok0footer {
+    display: none;
   }
 }

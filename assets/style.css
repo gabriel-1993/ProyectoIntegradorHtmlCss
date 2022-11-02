@@ -295,10 +295,11 @@ main {
   margin-top: 40px;
   margin-bottom: 25px;
 }
-#mainbeneficios:nth-child(2) {
+#mainbeneficios h3 {
   color: var(--color2);
   font-weight: 400;
   font-size: 2rem;
+  width: 85%;
 }
 
 .beneficioscontenedor {
@@ -308,7 +309,6 @@ main {
   gap: 100px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .divcard {
@@ -318,7 +318,7 @@ main {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  max-width: 250px;
+  width: 250px;
   height: 240px;
   border-radius: 8px;
   border: solid 3px var(--color4);
@@ -382,11 +382,12 @@ main {
   padding: 5px;
 }
 .card-destino-down h3 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
   color: var(--color3);
   display: flex;
   justify-content: center;
+  letter-spacing: 1.5px;
 }
 
 .down-items {
@@ -403,13 +404,13 @@ main {
 }
 
 .down-items-1 p {
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 16px;
   color: var(--color6);
 }
 
 .down-items-1 span {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 18px;
   color: var(--color6);
 }
@@ -420,7 +421,7 @@ main {
   border: none;
   background: var(--color3);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   cursor: pointer;
 }
@@ -537,7 +538,7 @@ main {
 }
 
 .divmapa {
-  height: 65vh;
+  height: 90%;
   width: 90%;
 }
 
@@ -624,9 +625,9 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  width: 30%;
+  width: max(30%, 300px);
   height: 100%;
-  padding: 20px 50px;
+  padding: 20px 0;
 }
 
 .divdatos-item {
@@ -642,7 +643,7 @@ textarea {
 
 .divdatos-item2 span {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .divdatos-item2 p {
