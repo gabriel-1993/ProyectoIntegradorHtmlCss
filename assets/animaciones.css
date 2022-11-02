@@ -1,0 +1,112 @@
+/* Para suavizar la transicion y dejar distancia entre la section y el header al moverse con los links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+/* Al mostrar el carro de compras desenfocar lo que esta fuera  */
+.overlay {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+#cart-toggle:checked ~ .overlay {
+  display: block;
+}
+
+/* Para el Menu-Hamburguesa */
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+/* Animacion en el hover de navbar-a(en el hover el subrayado se traslada  */
+
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--color2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+/* Trasladar el div del carrito ,menos velocidad  */
+
+.cart-icon {
+  transition: all 0.35s ease-out;
+}
+
+.cart-icon:hover,
+.logousuario:hover {
+  border: solid 2px var(--color3);
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+}
+
+/* Hover para los botones "comprar","ConfirmarCompra","+","-","enviar" */
+
+.btn- {
+  background-color: var(--color4);
+  cursor: pointer;
+}
+
+.btn-:hover,
+.btn:hover {
+  border: solid 2px var(--color3);
+  color: var(--color3);
+  transition: all 0.2s ease-in;
+  color: #f1f1f1;
+  background: #ff6347;
+  border: none;
+}
+
+/* Animacion para hero aparecer texto o div*/
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.mainhero__divtexto {
+  animation: fade 1.3s ease-in-out;
+}
+
+.mainhero__divtexto h1 {
+  animation: fade 1.5s ease-in-out;
+}

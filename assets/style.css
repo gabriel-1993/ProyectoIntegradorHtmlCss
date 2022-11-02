@@ -20,30 +20,28 @@
 }
 header {
   height: 75px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 140px;
   color: var(--color1);
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--color5);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 7px 10px var(--color4);
 }
+
 .logo {
-  height: 190px;
-  margin-left: 15px;
+  height: 75px;
 }
 
 .logousuario {
-  height: 40px;
+  color: var(--color1);
   border: solid var(--color1) 2px;
-  padding: 5px 10px;
+  padding: 9px 15px;
   border-radius: 10px;
-}
-.logousuario:hover,
-.card-icon:hover {
-  height: 38px;
-  transform: translateX(-4px);
-  border: solid 3px var(--color3);
 }
 
 .navbar-a {
@@ -53,8 +51,7 @@ header {
 }
 
 .navbar-a:hover {
-  color: var(--color2);
-  border-bottom: solid 2px var(--color3);
+  color: var(--color3);
 }
 nav {
   display: flex;
@@ -73,67 +70,100 @@ nav {
 }
 
 /* -----------------------  Carro de compras (Header) ------------------------- */
-.card-icon {
-  height: 40px;
-  border: solid var(--color1) 2px;
-  padding: 5px 10px;
+.cart-icon {
+  border: solid 2px var(--color1);
+  padding: 9px 15px;
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  color: var(--color1);
 }
 
 .divcarro {
   position: absolute;
-  top: 65px;
+  top: 75px;
   right: 0;
-  padding: 50px 30px;
-  background: black;
-  border-left: 1px solid red;
+  padding: 8px 35px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(235, 226, 226),
+    rgb(161, 161, 161)
+  );
   flex-direction: column;
   gap: 30px;
-  height: calc(100vh - 65px);
+  height: 100vh;
   z-index: 2;
   overflow-y: scroll;
   display: none;
+}
+
+.carro-imgvene {
+  height: 150px;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .divcarro::-webkit-scrollbar {
   display: none;
 }
 
-.divcarro h2 {
-  color: #fff;
-  font-size: 20px;
+.cart-item {
+  border: solid 2px var(--color5);
+  border-radius: 15px;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.item-bid-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.item-bid-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-bid-price span {
+  color: var(--color1);
   font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.divcarro h2 {
+  color: var(--color3);
+  font-size: 22px;
+  font-weight: 800;
 }
 .divcarro-item {
   display: flexa;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  border: 1px solid red;
   border-radius: 10px;
   padding: 20px;
 }
 .divcarro-item img {
-  height: 65px;
+  height: 165px;
   width: 65px;
 }
 
 .item-title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 14px;
+  color: var(--color3);
+  font-weight: 800;
+  font-size: 19px;
 }
 
 .item-bid {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.item-price {
-  color: blue;
-  font-size: 16px;
-  font-weight: 800;
+  color: var(--color1);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .item-handler {
@@ -151,18 +181,22 @@ nav {
   border-radius: 5px;
   color: #fff;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 
 .up {
-  border: solid 1px #fff;
+  background: var(--color3);
+  cursor: pointer;
 }
-.down {
-  background-color: var(--color4);
-  border: 1px red solid;
+.cant-per {
+  color: var(--color1);
+  font-size: 18px;
+  font-weight: 700;
 }
+
 .divider {
-  margin-top: 20px;
-  border: 0.5px solid #fff;
+  margin-top: 5px;
+  border: 0.5px solid var(--color5);
 }
 .card-total {
   display: flex;
@@ -171,14 +205,23 @@ nav {
 }
 
 .card-total p {
-  color: #fff;
+  color: #ff6347;
   font-weight: 700;
 }
 
 .card-total span {
-  color: #fff;
-  font-weight: 400;
+  color: #ff6347;
+  font-weight: 600;
   font-size: 18px;
+}
+.btn-add {
+  padding: 14px;
+  color: var(--color5);
+  font-size: 17px;
+  background: var(--color3);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 #cart-toggle {
@@ -198,7 +241,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.mainhero {
+#mainhero {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -224,13 +267,18 @@ main {
   padding: 30px 0;
   text-align: center;
   width: 65%;
-  color: var(--color6);
-  background-color: hsl(120, 3%, 81%, 0.5);
+  color: var(--color3);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(228, 228, 228, 0.9),
+    hsl(0, 0%, 50%, 0.8)
+  );
+  border-radius: 4px;
 }
 
 /* ----------------------------    Beneficios    --------------------------- */
 
-.beneficios {
+#mainbeneficios {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -240,14 +288,14 @@ main {
   background: var(--color6);
 }
 
-.beneficios h2 {
+#mainbeneficios h2 {
   color: var(--color2);
   font-weight: 700;
   font-size: 3rem;
   margin-top: 40px;
   margin-bottom: 25px;
 }
-.beneficios p {
+#mainbeneficios:nth-child(2) {
   color: var(--color2);
   font-weight: 400;
   font-size: 2rem;
@@ -270,7 +318,7 @@ main {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  width: 250px;
+  max-width: 250px;
   height: 240px;
   border-radius: 8px;
   border: solid 3px var(--color4);
@@ -302,13 +350,13 @@ main {
 }
 .divcard p {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 20px;
   color: var(--color4);
 }
 
 /* -------------------------------------    Destinos    -------------------------------------- */
 
-.maindestinos {
+#maindestinos {
   min-height: 100vh;
   width: 100%;
   background-color: var(--color5);
@@ -375,11 +423,6 @@ main {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-}
-
-.down-items button:hover {
-  background: #ff6347;
-  padding: 9px 20px;
 }
 
 .d1img {
@@ -475,7 +518,7 @@ main {
 
 /* -----------------------------------------    Contacto    ------------------------------------------- */
 
-.maincontacto {
+#maincontacto {
   background-color: var(--color5);
   width: 100%;
   min-height: 100vh;
@@ -577,11 +620,6 @@ textarea {
   margin-bottom: 40px;
 }
 
-.submit-contacto:hover {
-  background-color: #ff6347;
-  padding: 14px 28px;
-  margin-top: 32px;
-}
 .divdatos {
   display: flex;
   flex-direction: column;
@@ -619,7 +657,38 @@ textarea {
 /* ------------------------------------------    Footer    -------------------------------------- */
 
 footer {
-  height: 300px;
+  height: 150px;
   width: 100%;
   background-color: var(--color6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logok0footer {
+  height: 145px;
+}
+
+.footer-div-logos {
+  display: flex;
+  gap: 15px;
+}
+
+.logofooter {
+  font-size: 27px;
+  color: var(--color2);
+}
+
+.logofooter:hover {
+  color: var(--color5);
+}
+
+footer p {
+  color: var(--color4);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer span {
+  color: #ff6347;
+  font-weight: 800;
 }

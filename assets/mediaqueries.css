@@ -8,13 +8,17 @@
 @media (max-width: 992px) {
   .navbar-list {
     position: absolute;
-    top: 65px;
+    top: 75px;
     left: 5%;
     right: 5%;
     width: 90%;
     flex-direction: column;
-    background: gray;
-    border: 2px solid black;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(235, 226, 226),
+      rgb(161, 161, 161)
+    );
+    border: 2px solid var(--color3);
     border-top: 0px;
     border-radius: 0px 0px 15px 15px;
     align-items: flex-start;
@@ -25,6 +29,7 @@
   }
   .navbar-list a {
     font-size: 18px;
+    font-weight: 800;
   }
   .menu-label {
     display: flex;
@@ -40,7 +45,8 @@
   }
   .menu-icon {
     margin-right: 15px;
-    height: 45px;
+    font-size: 26px;
+    cursor: pointer;
   }
 
   /* Borde Carrito */
