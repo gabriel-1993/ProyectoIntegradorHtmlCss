@@ -201,14 +201,15 @@
     margin: 10px 0px;
     font-size: 1.4rem;
     width: 90%;
+    margin-bottom: 15px;
   }
   #mainbeneficios h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 90%;
   }
 
   .beneficioscontenedor {
-    gap: 15px;
+    gap: 25px;
   }
 
   .divcard {
