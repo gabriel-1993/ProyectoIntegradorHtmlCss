@@ -59,7 +59,7 @@
   #mainbeneficios h2 {
     font-size: 1.8rem;
     margin-top: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     text-align: center;
   }
   #mainbeneficios h3 {
@@ -83,8 +83,8 @@
   .imgpack,
   .imgexcursion,
   .imgdescuento {
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
     order: 2;
   }
   .divcard-up {
