@@ -68,7 +68,7 @@
     text-align: center;
   }
   .beneficioscontenedor {
-    gap: 8px;
+    gap: 15px;
     flex-direction: column;
     width: 100%;
   }
