@@ -283,7 +283,7 @@ nav {
 }
 /* DIV:USUARIO CONTRASEÑA */
 .divIniciar div div {
-  width: min(60%, 300px);
+  width: min(70%, 600px);
 }
 .divIniciar h2 {
   color: var(--color1);
@@ -291,22 +291,21 @@ nav {
   font-size: 2rem;
 }
 
+.btn-contraseña {
+  padding: 9px 15px;
+  background-color: var(--color1);
+  border-radius: 9px;
+  border: none;
+  color: var(--color5);
+  font-size: 0.8rem;
+}
+
 .btn-Iniciar {
   font-size: 1.3rem;
   font-weight: 500;
-  padding: 8px 25px;
+  padding: 7px 80px;
   color: var(--color5);
   background: var(--color3);
-  border: none;
-  border-radius: 13px;
-}
-
-.btn-contraseña {
-  font-size: 0.9rem;
-  font-weight: 300;
-  padding: 8px 18px;
-  color: var(--color5);
-  background: var(--color1);
   border: none;
   border-radius: 13px;
 }
@@ -351,25 +350,25 @@ nav {
 }
 
 .label-registrarse {
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--color1);
 }
 
 .btn-leer {
-  padding: 4px 18px;
+  padding: 5px 60px;
   font-size: 0.8rem;
-  font-weight: 400;
   background-color: var(--color1);
   color: #fff;
   border: none;
   border-radius: 8px;
   letter-spacing: 4px;
   cursor: pointer;
+  font-weight: 400;
 }
 
 .submit-registro {
-  padding: 10px 23px;
+  padding: 11px 70px;
   font-size: 1rem;
   font-weight: 500;
   background-color: var(--color3);
