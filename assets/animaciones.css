@@ -71,6 +71,7 @@ html {
 .btn- {
   background-color: var(--color4);
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 .btn-:hover,
@@ -81,6 +82,7 @@ html {
   color: #f1f1f1;
   background: #ff6347;
   border: none;
+  transform: scale(1.1);
 }
 
 /* Animacion para hero aparecer texto o div*/
@@ -94,9 +96,9 @@ html {
   }
 }
 
-@keyframes slide-right {
+@keyframes slide-top {
   from {
-    transform: translateY(-500px);
+    transform: translateY(-370px);
   }
   to {
     transform: translateY(0);
@@ -104,9 +106,9 @@ html {
 }
 
 .mainhero__divtexto {
-  animation: fade 1.3s ease-in-out;
+  animation: slide-top 1.7s ease-in-out;
 }
 
 .mainhero__divtexto h1 {
-  animation: fade 1.5s ease-in-out;
+  animation: fade 2.5s ease-in;
 }

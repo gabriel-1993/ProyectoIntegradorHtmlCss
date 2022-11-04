@@ -55,6 +55,139 @@
     height: 40px;
   }
 
+  /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
+  .section-login {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .divcontenedorlogin {
+    min-height: 100vh;
+    width: min(70%, 1000px);
+    flex-direction: column;
+  }
+
+  /* -------- INICIAR SESION ------- */
+  .divIniciar {
+    padding-top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    border-right: solid 2px var(--color4);
+  }
+
+  .divIniciar div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  /* DIV:USUARIO CONTRASEÑA */
+  .divIniciar div div {
+    width: min(60%, 300px);
+  }
+  .divIniciar h2 {
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .btn-Iniciar {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    color: var(--color5);
+    background: var(--color3);
+    border: none;
+    border-radius: 13px;
+  }
+
+  .btn-contraseña {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 8px 18px;
+    color: var(--color5);
+    background: var(--color1);
+    border: none;
+    border-radius: 13px;
+  }
+
+  /*--------- REGISTRARSE -----------*/
+
+  .divRegistrarse h2 {
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  /* INPUTS REGISTRARSE */
+  .divRegistrarse {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .divRegistrarse div {
+    width: 70%;
+  }
+  .registrarse {
+    width: 100%;
+    padding: 7px;
+    border: solid 2px var(--color4);
+    background-color: var(--color5);
+    color: var(--color1);
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+
+  .div-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .label-registrarse {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color1);
+  }
+
+  .btn-leer {
+    padding: 4px 18px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background-color: var(--color1);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    cursor: pointer;
+  }
+
+  .submit-registro {
+    padding: 10px 23px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--color3);
+    color: #fff;
+    border: none;
+    border-radius: 13px;
+    letter-spacing: 4px;
+    cursor: pointer;
+  }
+
+  /* ---------------------------------------    Beneficios    --------------------------------- */
+
   /*-------------------------------------------     BENEFICIOS    -----------------------------------------  */
   #mainbeneficios h2 {
     font-size: 1.8rem;
@@ -105,7 +238,7 @@
   }
 
   /*-------------------------------------------     DESTINO       -----------------------------------------  */
-  #maindestinos {
+  .divdestinos {
     gap: 15px;
     padding: 25px;
   }
