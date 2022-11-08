@@ -265,7 +265,7 @@
 
   /* -------- INICIAR SESION ------- */
   .divIniciar {
-    height: 40%;
+    height: 25%;
     gap: 12px;
   }
 
@@ -273,7 +273,7 @@
 
   /* INPUTS REGISTRARSE */
   .divRegistrarse {
-    height: 60%;
+    height: 75%;
     gap: 10px;
   }
 
