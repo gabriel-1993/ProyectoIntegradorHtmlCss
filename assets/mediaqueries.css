@@ -73,7 +73,6 @@
     width: min(100%, 500px);
     gap: 15px;
     border-right: none;
-    border-bottom: solid 2px var(--color4);
     padding-bottom: 35px;
   }
 
@@ -247,6 +246,36 @@
   }
   .logok0footer {
     display: none;
+  }
+}
+@media (max-width: 576px) and (orientation: landscape) {
+  .divcontenedorlogin {
+    flex-direction: row;
+  }
+
+  .divRegistrarse {
+    height: 50%;
+    width: min(100%, 500px);
+  }
+  .divIniciar {
+    height: 60%;
+    width: min(100%, 500px);
+  }
+  .btn-contraseña,
+  .btn-leer {
+    padding: 5px 9px;
+    background-color: var(--color1);
+    border-radius: 7px;
+    border: none;
+    color: var(--color5);
+    font-size: 0.7rem;
+  }
+  .btn-Iniciar,
+  .submit-registro {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 4px 13px;
+    border-radius: 13px;
   }
 }
 
