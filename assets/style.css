@@ -268,7 +268,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
   border-right: solid 2px var(--color4);
 }
