@@ -74,6 +74,8 @@
     gap: 15px;
     border-right: none;
     padding-bottom: 35px;
+    justify-content: center;
+    align-items: center;
   }
 
   .divIniciar div {
@@ -258,7 +260,7 @@
     width: min(100%, 500px);
   }
   .divIniciar {
-    height: 60%;
+    height: 50%;
     width: min(100%, 500px);
   }
   .btn-contraseña,
