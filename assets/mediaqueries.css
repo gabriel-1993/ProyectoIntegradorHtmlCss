@@ -261,6 +261,9 @@
 
   /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
 
+  .divcontenedorlogin {
+    gap: 40px;
+  }
   /* -------- INICIAR SESION ------- */
   .divIniciar {
     height: 25%;
