@@ -266,6 +266,7 @@
   /* -------- INICIAR SESION ------- */
   .divIniciar {
     height: 40%;
+    gap: 12px;
   }
 
   /*--------- REGISTRARSE -----------*/
@@ -273,6 +274,7 @@
   /* INPUTS REGISTRARSE */
   .divRegistrarse {
     height: 60%;
+    gap: 10px;
   }
 
   /* ------------------------------------------     HERO    ------------------------------------------- */
