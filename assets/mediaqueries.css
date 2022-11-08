@@ -61,7 +61,7 @@
   }
   .divcontenedorlogin {
     width: min(70%, 1000px);
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     overflow: auto;
   }
@@ -73,6 +73,8 @@
     width: min(100%, 500px);
     gap: 15px;
     border-right: none;
+    border-bottom: solid 2px var(--color4);
+    padding-bottom: 35px;
   }
 
   .divIniciar div {
@@ -257,28 +259,6 @@
 
   nav {
     gap: 14px;
-  }
-
-  /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
-
-  .divcontenedorlogin {
-    gap: 10px;
-    min-height: 130vh;
-    justify-content: space-evenly;
-  }
-  /* -------- INICIAR SESION ------- */
-  .divIniciar {
-    height: 25%;
-    gap: 12px;
-    margin-bottom: 5px;
-  }
-
-  /*--------- REGISTRARSE -----------*/
-
-  /* INPUTS REGISTRARSE */
-  .divRegistrarse {
-    height: 50%;
-    gap: 12px;
   }
 
   /* ------------------------------------------     HERO    ------------------------------------------- */
