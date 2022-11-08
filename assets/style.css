@@ -301,9 +301,9 @@ nav {
 }
 
 .btn-Iniciar {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  padding: 7px 80px;
+  padding: 7px 60px;
   color: var(--color5);
   background: var(--color3);
   border: none;
@@ -369,8 +369,8 @@ nav {
 }
 
 .submit-registro {
-  padding: 11px 70px;
-  font-size: 1rem;
+  padding: 7px 50px;
+  font-size: 1.2rem;
   font-weight: 500;
   background-color: var(--color3);
   color: #fff;
