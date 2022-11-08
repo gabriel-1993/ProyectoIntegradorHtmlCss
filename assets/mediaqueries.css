@@ -263,6 +263,9 @@
 
   /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
 
+  .divcontenedorlogin {
+    height: min(60%, 500px);
+  }
   /* -------- INICIAR SESION ------- */
   .divIniciar {
     height: 25%;
