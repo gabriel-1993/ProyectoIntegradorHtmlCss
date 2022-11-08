@@ -262,19 +262,22 @@
   /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
 
   .divcontenedorlogin {
-    gap: 40px;
+    gap: 10px;
+    min-height: 130vh;
+    justify-content: space-evenly;
   }
   /* -------- INICIAR SESION ------- */
   .divIniciar {
     height: 25%;
     gap: 12px;
+    margin-bottom: 5px;
   }
 
   /*--------- REGISTRARSE -----------*/
 
   /* INPUTS REGISTRARSE */
   .divRegistrarse {
-    height: 55%;
+    height: 50%;
     gap: 12px;
   }
 

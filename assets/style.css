@@ -238,7 +238,7 @@ nav {
 .section-login {
   margin-top: 75px;
   width: min(100%, 1000px);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
