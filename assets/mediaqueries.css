@@ -261,6 +261,20 @@
     gap: 14px;
   }
 
+  /*---------------------------------------     USUARIOS  login.html    --------------------------------------*/
+
+  /* -------- INICIAR SESION ------- */
+  .divIniciar {
+    height: 40%;
+  }
+
+  /*--------- REGISTRARSE -----------*/
+
+  /* INPUTS REGISTRARSE */
+  .divRegistrarse {
+    height: 60%;
+  }
+
   /* ------------------------------------------     HERO    ------------------------------------------- */
   .mainhero__divtexto h1 {
     font-size: 1.3rem;
