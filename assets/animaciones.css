@@ -105,12 +105,21 @@ html {
   }
 }
 
+@keyframes slide-left {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .mainhero__divtexto {
   animation: slide-top 1.7s ease-in-out;
 }
 .hero-btnRegistrate,
 .hero-btnDestinos {
-  animation: slide-top 1s ease-in-out;
+  animation: slide-left 2s ease-in-out;
 }
 
 .mainhero__divtexto h1,
