@@ -108,7 +108,12 @@ html {
 .mainhero__divtexto {
   animation: slide-top 1.7s ease-in-out;
 }
+.hero-btnRegistrate,
+.hero-btnDestinos {
+  animation: slide-top 1s ease-in-out;
+}
 
-.mainhero__divtexto h1 {
+.mainhero__divtexto h1,
+.mainhero__divtexto h2 {
   animation: fade 2.5s ease-in;
 }

@@ -123,7 +123,12 @@
     padding: 9px 50px;
     font-size: 0.8rem;
   }
+  /* --------------------------------------------     HERO         -------------------------------------------*/
 
+  .hero-divbotones {
+    flex-direction: column;
+    gap: 10px;
+  }
   /*-------------------------------------------     BENEFICIOS    -----------------------------------------  */
   #mainbeneficios h2 {
     font-size: 1.8rem;
@@ -295,6 +300,16 @@
   /* ------------------------------------------     HERO    ------------------------------------------- */
   .mainhero__divtexto h1 {
     font-size: 1.3rem;
+  }
+  .mainhero__divtexto h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-btnRegistrate,
+  .hero-btnDestinos {
+    font-size: 0.8rem;
+    padding: 10px 25px;
+    gap: 8px;
   }
 
   /* --------------------------------------     BENEFICIOS     --------------------------------------- */

@@ -421,6 +421,43 @@ main {
     hsl(0, 0%, 50%, 0.8)
   );
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainhero__divtexto h1 {
+  font-size: 2.6rem;
+}
+.mainhero__divtexto h2 {
+  color: var(--color1);
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 45px;
+  width: 90%;
+  text-align: center;
+}
+
+.hero-divbotones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+}
+
+.hero-btnRegistrate,
+.hero-btnDestinos {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background-color: var(--color3);
+  color: var(--color5);
+  display: flex;
+  gap: 4px;
 }
 
 /* ---------------------------------------    Beneficios    --------------------------------- */
@@ -435,17 +472,10 @@ main {
   background: var(--color6);
 }
 
-#mainbeneficios h2 {
-  color: var(--color2);
-  font-weight: 700;
-  font-size: 3rem;
-  margin-bottom: 45px;
-  width: auto;
-}
 #mainbeneficios h3 {
   color: var(--color2);
-  font-weight: 400;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 2.2rem;
   width: auto;
   text-align: center;
   padding: 0 40px;
