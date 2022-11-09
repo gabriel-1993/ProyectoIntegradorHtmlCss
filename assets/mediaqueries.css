@@ -250,6 +250,10 @@
   }
 }
 @media (max-width: 992px) and (orientation: landscape) {
+  .hero-divbotones {
+    flex-direction: row;
+  }
+
   .divcontenedorlogin {
     flex-direction: row;
   }
